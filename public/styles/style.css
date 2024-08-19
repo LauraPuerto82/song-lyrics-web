@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(135deg, #E6E6FA, #FFFFFF); /* Lavanda a blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos el alto de la ventana */
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #FFD1DC; /* Rosa pálido */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Aumenta el ancho máximo */
+  width: 90%; /* Ajusta el ancho al 90% del contenedor */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 80%;
+  font-size: 1em;
+  font-family: 'Lora', serif;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6f91;
+  color: white;
+  font-size: 1.2em; /* Tamaño del texto aumentado */
+  font-family: 'Lora', serif;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 60%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff3f6b;
+}
+
+#lyricsContainer {
+  margin-top: 20px;
+  background-color: #ffe4e1; /* Fondo rosa pastel */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+pre {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  background-color: #ffe4e1; /* Fondo rosa pastel */
+  padding: 10px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+p {
+  font-family: 'Lora', serif;
+  color: #ff3f6b;
+  font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

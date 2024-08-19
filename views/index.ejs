@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Buscador de Letras de Canciones</title>
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Buscador de Letras de Canciones</h1>
+    <h2>Selecciona el autor y la canción</h2>
+
+    <form action="/get-lyrics" method="POST" class="form">
+      <input type="text" name="artist" placeholder="Nombre del artista" required>
+      <input type="text" name="song" placeholder="Nombre de la canción" required>
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Render lyrics or error -->
+    <div id="lyricsContainer" class="<%= locals.lyrics || locals.error ? '' : 'hidden' %>">
+      <% if (locals.lyrics) { %>
+        <h3>Letra de la canción:</h3>
+        <pre><%= lyrics %></pre>
+      <% } %>
+      <% if (locals.error) { %>
+        <h3>Error:</h3>
+        <p><%= error %></p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>
